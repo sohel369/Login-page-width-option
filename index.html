@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(pexels-pok-rie-2876565.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 30%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.366);
+            margin: 25px auto;
+            position: absolute;
+            top: 25px;
+            left: 40%;
+        }
+        
+        .container h1 {
+            text-align: center;
+            color: white;
+            /* background: orange; */
+        }
+        
+        label {
+            display: block;
+            margin: 20px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .input {
+            display: block;
+            margin: 20px;
+            outline: none;
+            border: none;
+            width: 80%;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        input::placeholder {
+            margin: 20px;
+            font-size: 20px;
+            color: black;
+        }
+        
+        button {
+            display: block;
+            margin: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            color: green;
+            padding: 10px;
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            position: relative;
+        }
+        
+        .gendere input,
+        p {
+            display: inline;
+            margin-top: 6px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .gendere {
+            position: relative;
+        }
+        
+        .ontionss {
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .ontionss select option {
+            font-size: 20px;
+            color: green;
+        }
+        
+        .ontionss select {
+            font-size: 20px;
+            color: blue;
+        }
+        
+        .ontionss h3 {
+            color: white;
+            font-size: 25px;
+        }
+        
+        .hobby input {
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="submit/php">
+            <label for="name">Name</label>
+            <input class="input inp1" type="Name" placeholder="Name">
+            <label for="Email">Email</label>
+            <input class="input inp2" type="email" placeholder="Email">
+
+            <div class="gendere">
+                <p>Gender</p><br>
+                <input type="radio" name="Gender" value="Male" id="radio"> Male
+                <!-- <p>Gender</p> -->
+                <input type="radio" name="Gender" value="Female"> Female
+                <!-- <p>Gender</p> -->
+                <input type="radio" name="Gender" value="Other"> Other
+                <div class="ontionss">
+                    <h3>Education</h3>
+                    <select>
+                    <option value="psc">P.S.C</option>
+                    <option value="Jsc">J.S.C</option>
+                    <option value="Ssc">S.S.C</option>
+                    <option value="Hsc">H.S.C</option>
+                    <option value="BA.HON">BA.Hon</option>
+                    </select>
+                    <div class="hobby">
+                        <h3>Your Hobby</h3>
+                        <input type="checkbox" name="Your Hobby" value="Reading">Reading
+                        <input type="checkbox" name="Your Hobby" value="Recitaton Quran">Recitaton Quran
+                        <input type="checkbox" name="Your Hobby" value="Use Laptop">Use Laptop
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
